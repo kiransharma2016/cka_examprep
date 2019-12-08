@@ -1,7 +1,8 @@
 # cka_examprep
 ## playbook to isnstall kuberenetes
 https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d \
-git clone https://github.com/ctienshi/kubernetes-ansible
+
+git clone https://github.com/ctienshi/kubernetes-ansible.git
 
 ## deleting kubernetes dashboard objects
 
