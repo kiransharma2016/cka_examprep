@@ -8,7 +8,7 @@ ubectl patch svc kubernetes-dashboard --type='json' -p '[{"op":"replace","path":
 kubectl patch svc kubernetes-dashboard -n kubernetes-dashboard --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]'
 
 
-#Alreanatively, we can download the YAML for any  given service and make changes and redeploy
+#Alternatively, we can download the YAML for any  given service and make changes and redeploy
 
 kubectl -n kubernetes-dashboard get service kubernetes-dashboard -o yaml > kubernetes-dashboard-svc.yaml
 
