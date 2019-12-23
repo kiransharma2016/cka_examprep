@@ -7,3 +7,7 @@ https://medium.com/@lestrrat/configuring-rbac-for-your-kubernetes-service-accoun
 
 
 https://unofficial-kubernetes.readthedocs.io/en/latest/tutorials/stateless-application/expose-external-ip-address/
+
+
+#### cert in kubernetes
+https://8gwifi.org/docs/kube-nginx.jsp
