@@ -9,3 +9,6 @@ https://www.threatstack.com/blog/50-best-kubernetes-architecture-tutorials
 
 #### 50 tutorials
 https://www.threatstack.com/blog/50-useful-kubernetes-tutorials-for-it-professionals
+
+#### best kubernetes tutorials
+https://multinode-kubernetes-cluster.readthedocs.io/en/latest/03-k8s-helm_and_packages.html
