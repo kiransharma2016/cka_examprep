@@ -12,3 +12,8 @@ https://www.threatstack.com/blog/50-useful-kubernetes-tutorials-for-it-professio
 
 #### best kubernetes tutorials
 https://multinode-kubernetes-cluster.readthedocs.io/en/latest/03-k8s-helm_and_packages.html
+
+#### setting up kubernetes with calico example
+https://www.linode.com/docs/kubernetes/how-to-deploy-nginx-on-a-kubernetes-cluster/ \
+Calico needs pod-cidr=192.168.0.0/16
+https://www.linode.com/docs/kubernetes/how-to-deploy-nginx-on-a-kubernetes-cluster/
