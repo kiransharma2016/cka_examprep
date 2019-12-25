@@ -1,0 +1,2 @@
+#### 1.
+https://www.weave.works/technologies/kubernetes-on-aws/?mkt_tok=eyJpIjoiTkdOak1EQXlPRGxoWWpCaCIsInQiOiJESE93OCsxXC9MaVJ0dzY5Tys1aEVxMm9CRkMxQWtBbjUzZ1p1VW9MZnhMcUhaeGpjVWJReXNwcEJqem1qYkJYWHNcLytiSWpJaXRaSUNsVlc4ZjBEamdVNXVqczdjdFdzOXJJVGFNaHRDXC9GVXpIN3NnWml6cUsrMGlNRkNlZmUrdiJ9
