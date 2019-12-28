@@ -24,3 +24,6 @@ http://collabnix.com/kubernetes-hands-on-lab-3-deploy-istio-mesh/
 
 #### very good tutorials
 https://eksworkshop.com/030_eksctl/
+
+#### microservices
+https://www.guru99.com/microservices-tutorial.html
