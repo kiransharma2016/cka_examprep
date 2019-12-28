@@ -21,3 +21,6 @@ https://www.linode.com/docs/kubernetes/how-to-deploy-nginx-on-a-kubernetes-clust
 
 #### very good docker and kubernetes tutorials
 http://collabnix.com/kubernetes-hands-on-lab-3-deploy-istio-mesh/
+
+#### very good tutorials
+https://eksworkshop.com/030_eksctl/
