@@ -30,3 +30,6 @@ https://www.guru99.com/microservices-tutorial.html
 
 #### best tutorials
 http://www.kubernet.io/
+
+#### unofficial kubernetes
+https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/cluster-administration/static-pod/
