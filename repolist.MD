@@ -3,3 +3,5 @@ https://github.com/lerndevops/educka
 
 #### building kubernetes cluster 
 https://github.com/kairen/kube-ansible
+
+https://github.com/lerndevops/educka/tree/master/dashboard
