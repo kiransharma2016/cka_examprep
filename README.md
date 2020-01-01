@@ -15,10 +15,10 @@ kubectl delete secret kubernetes-dashboard-certs --namespace=kube-system \
 kubectl delete secret kubernetes-dashboard-key-holder --namespace=kube-system
 
 ## for namespaces kubernetes-dashboard
-kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
-kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
-kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard
-kubectl delete secret kubernetes-dashboard-key-holder --namespace=kubernetes-dashboard
+kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard \
+kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard \
+kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard \
+kubectl delete secret kubernetes-dashboard-key-holder --namespace=kubernetes-dashboard 
