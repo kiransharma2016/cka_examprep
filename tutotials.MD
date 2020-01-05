@@ -33,3 +33,7 @@ http://www.kubernet.io/
 
 #### unofficial kubernetes
 https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/cluster-administration/static-pod/
+
+
+#### k8s lb service 
+https://aws.amazon.com/blogs/opensource/network-load-balancer-support-in-kubernetes-1-9/
