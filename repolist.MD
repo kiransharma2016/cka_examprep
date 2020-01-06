@@ -5,3 +5,6 @@ https://github.com/lerndevops/educka
 https://github.com/kairen/kube-ansible
 
 https://github.com/lerndevops/educka/tree/master/dashboard
+
+#### useful 
+https://github.com/ctienshi/kubernetes-ansible/tree/master/centos
