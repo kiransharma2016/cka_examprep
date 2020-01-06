@@ -37,3 +37,7 @@ https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/cluster-administ
 
 #### k8s lb service 
 https://aws.amazon.com/blogs/opensource/network-load-balancer-support-in-kubernetes-1-9/
+
+#### comparing 3 different type of kubernetes services
+https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+
