@@ -21,3 +21,5 @@ nginx        LoadBalancer   10.96.144.218   34.227.23.249   80:30441/TCP   15m  
 The external ip 34.227.23.249 was the ip of the elb. 
 
 
+#### aws nlb supports in kubernetes
+https://aws.amazon.com/blogs/opensource/network-load-balancer-support-in-kubernetes-1-9/
