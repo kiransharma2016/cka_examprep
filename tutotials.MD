@@ -39,6 +39,11 @@ https://unofficial-kubernetes.readthedocs.io/en/latest/concepts/cluster-administ
 https://aws.amazon.com/blogs/opensource/network-load-balancer-support-in-kubernetes-1-9/
 
 
+#### yaml tutorials
+https://www.mirantis.com/blog/introduction-to-yaml-creating-a-kubernetes-deployment/
+
+
+
 #### integrate k8s webui with ldap
 https://icicimov.github.io/blog/virtualization/Kubernetes-LDAP-Authentication/
 #### comparing 3 different type of kubernetes services
