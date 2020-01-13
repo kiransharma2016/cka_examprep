@@ -1,13 +1,13 @@
-#### token generation 
+#### Token generation 
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep kubernetes-dashboard | awk '{print $1}')
 
 
-#### print token
+#### Print token
  token=`kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep kubernetes-dashboard | awk '{print $1}') |grep -i token |awk '{print $2}'`
  
- ## the token var has the value of the token
+ ## Note: The token var has the value of the token
  
-#### ---------------------------
+#### assignment for kubernetes-dashboard
 
 1. Install webui with 3 different cni 
 	- calico worked 
