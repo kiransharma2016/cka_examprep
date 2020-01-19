@@ -12,3 +12,6 @@ https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-in
 
 #### history of containers
 https://dzone.com/articles/evolution-of-linux-containers-future
+
+#### contianer orchestration
+https://www.exoscale.com/syslog/container-orchestration/
