@@ -1,4 +1,6 @@
-#### k8s doc
+#### k8s best training site
+https://container.training/
+
 #### unfficial doc of k8s
 
 https://unofficial-kubernetes.readthedocs.io/en/latest/
