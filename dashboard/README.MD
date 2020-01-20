@@ -1,4 +1,6 @@
-# deploy insecure dashboard
+# Deploying k8s Dashboard
+
+## 1 Deploy insecure dashboard
    kubectl apply -f dashboard-insecure.yml
 ### validate
 ```
@@ -19,13 +21,13 @@
 ####  type http://ip of your node :node port displayed in the display service above
       ex: http://10.0.0.114:30419/
 
-#### 100.0.114 is ip of my master and 30419 is the service port
+#### 10.0.0.114 is ip of my master and 30419 is the service port
 
 ####    skip the login to get in  the dashboard     
 
 
 
-#### Deploying the secuire dashboard
+## 2. Deploying the secuire dashboard
 
 #### 1. Deploy the dashboad   
 kubectl apply -f dashboard-secure.yml
@@ -58,6 +60,25 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjJBNzB4bFZDbFN1cVRkd3N4VkxSVTdmVS1ROGlyR2l5WVl4ZHZ0
 ####  Type http://ip of your node :node port displayed in the display service above
 ####  eg: http://10.0.0.114:30419/
 
-#### 100.0.114 is ip of my master and 30419 is the service port
+#### 10.0.0.114 is ip of my master and 30419 is the service port
 
-####    ener the token generated above 
+####  Ener the token generated above 
+
+
+####Deleting kubernetes dashboard objects in default project
+kubectl delete deployment kubernetes-dashboard --namespace=kube-system
+kubectl delete service kubernetes-dashboard --namespace=kube-system
+kubectl delete role kubernetes-dashboard-minimal --namespace=kube-system
+kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kube-system
+kubectl delete sa kubernetes-dashboard --namespace=kube-system
+kubectl delete secret kubernetes-dashboard-certs --namespace=kube-system
+kubectl delete secret kubernetes-dashboard-key-holder --namespace=kube-system
+
+#### Deleting object for namespaces kubernetes-dashboard
+kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard
+kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard
+kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
+kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
+kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard
+kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard
+kubectl delete secret kubernetes-dashboard-key-holder --namespace=kubernetes-dashboard
