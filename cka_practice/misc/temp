@@ -1,0 +1,13 @@
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      lineinfile:
+        dest: /etc/fstab
+        regexp: '^//archive/pipeline'
+        line: '#//archive/pipeline'
+        state: present
+      tags: update-fstab

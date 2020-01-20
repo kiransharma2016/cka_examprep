@@ -1,0 +1,5 @@
+- name: Copy Kubernetes admin config to home directory
+  copy:
+    src: "{{ admin_kubeconfig }}"
+    dest: "{{ ansible_env.HOME }}/.kube/config"
+    remote_src: yes

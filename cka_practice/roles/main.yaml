@@ -1,0 +1,3 @@
+timezone: "GMT-5"
+# When timedatectl is used
+i#timezone_use_local_rtc: false

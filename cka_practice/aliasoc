@@ -1,0 +1,13 @@
+alias kgp='oc get pod'
+alias k='oc'
+alias ksys='oc --namespace=kube-system'
+alias kgsys='oc --namespace=kube-system'
+alias kgpkube='oc get pod -n kube-system'
+
+alias kgpow='oc get pod -o wide -n '
+alias kgpkube='oc get pod -n kube-system'
+alias klogin='oc exec -it'
+alias kgno='oc get nodes'
+alias kdno='oc describe nodes'
+alias kgns='oc get namespaces'
+alias kgns='oc get namespaces'

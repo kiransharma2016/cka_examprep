@@ -1,0 +1,4 @@
+
+calico-typha           ClusterIP   10.104.153.213   <none>        5473/TCP                 9h
+kube-dns               ClusterIP   10.96.0.10       <none>        53/UDP,53/TCP,9153/TCP   9h
+kubernetes-dashboard   NodePort    10.104.94.21     <none>        443:32323/TCP            2m30s

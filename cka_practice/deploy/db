@@ -1,0 +1,28 @@
+  154  kubectl delete svc kubernetes-dashboard
+  155  kubectl delete svc kubernetes-dashboard -n kube-system
+  156  kubectl delete pod kubernetes-dashboard -n kube-system
+  157  kubectl delete pods kubernetes-dashboard -n kube-system
+  175  kubectl delete svc my-nginx -n default
+  256  kubectl delete  svc/nginx  
+  257  kubectl delete  svc/kubernetes-dashboard -n kube-system
+  260  kubectl delete  deploy/kubernetes-dashboard -n kube-system
+  261  kubectl delete  deploy/my-engix
+  264  kubectl delete  deploy/my-nginx
+  346  kubectl delete pod coredns-5644d7b6d9-rcjnd
+  347  kubectl delete pod coredns-5644d7b6d9-rcjnd -n kube-system
+  349  kubectl delete pod coredns-5644d7b6d9-5txkv -n kube-system
+  425  kubectl delete deploy/new-nginx-deployment
+  426  kubectl delete deploy/my-nginx
+  429  kubectl delete svc/new-nginx-deployment
+  529  kubectl delete pod alps -f
+  530  kubectl delete pod alps
+  555  kubectl delete decploy/kubernetes-dashboard
+  556  kubectl delete deploy/kubernetes-dashboard
+  557  kubectl delete deploy/kubernetes-dashboard -n kube-system
+  559  kubectl delete pod/kubernetes-dashboard -n kube-system
+  562  kubectl delete svc/kubernetes-dashboard -n kube-system
+  569  history |grep delete
+  570  kubectl delete  deploy/kubernetes-dashboard -n kube-system
+  571  kubectl delete  svc/kubernetes-dashboard -n kube-system
+  572  kubectl delete pod kubernetes-dashboard -n kube-system
+  574  history |grep delete >db

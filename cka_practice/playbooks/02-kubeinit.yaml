@@ -1,0 +1,49 @@
+---
+#Install Kubernetes
+#kubernetes is installed in all  three servers. First we need to create a repository entry for yum. To do this, add kubernets repo 
+#  /etc/yum.repos.d/kubernetes.repo and then add the following contents:
+
+#[kubernetes]
+#name=Kubernetes
+#baseurl=https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+#enabled=1
+#gpgcheck=1
+#repo_gpgcheck=1
+#gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+#        https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+
+- name: add Kubernetes' YUM repository
+    yum_repository:
+     name: Kubernetes
+     description: Kubernetes YUM repository
+     baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-x86_64
+     gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+     gpgcheck: yes
+
+`
+- name: install kubernetes (master)
+  become: yes
+  yum:
+    name:
+      - kubelet
+      - kubeadm
+      - kubectl
+      - kubernetes-cni
+    state: present
+
+- name: Reset kubeadm before init in case this is not the first run
+  command: kubeadm reset
+  when: kubeadm_reset_before_init
+
+- name: Initialize the Kubernetes cluster using kubeadm
+    command: kubeadm init --apiserver-advertise-address="10.0.0.94" --node-name k8s-master --pod-network-cidr=192.168.0.0/16
+
+#- name: kubeadm init with pre generated token
+#  command: kubeadm init --token {{ kubeadm_token }} --service-cidr 10.96.0.0/12
+  
+- name: wait for kubernetes to become active.
+  wait_for:
+    port: 6443
+    delay: 10
+    timeout: 300
+

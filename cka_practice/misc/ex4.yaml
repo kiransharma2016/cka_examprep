@@ -1,0 +1,11 @@
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      replace:
+        dest: /home/vagrant/testfstab
+        regexp: '(.*swap.*)'
+        replace: '#\1'

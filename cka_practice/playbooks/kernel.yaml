@@ -1,0 +1,11 @@
+- name: 加载内核模块
+  modprobe: 
+    name: "{{ item }}"
+    state: present
+  with_items:
+  - ip_vs
+  - ip_vs_rr
+  - ip_vs_sh
+  - ip_vs_wrr
+  - br_netfilter
+  ignore_errors: true

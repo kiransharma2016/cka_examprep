@@ -1,0 +1,945 @@
+    1  clear
+    2  dir
+    3  clear
+    4  ls l
+    5  ping yahoo.com
+    6  cler
+    7  clear
+    8  docker ps 
+    9  clear
+   10  cd /home/
+   11  cd sonarqube/
+   12  dir
+   13  clear
+   14  cd sonarqube-docker-compose/
+   15  clear
+   16  ls
+   17  vi docker-compose.yml 
+   18  clear
+   19  docker ps
+   20  docker inspect c427b1a15823
+   21  clear
+   22  dir
+   23  clear
+   24  ls -l
+   25  cd examples/
+   26  clear
+   27  ls
+   28  ls -l
+   29  systemctl status jenkins
+   30  clear
+   31  ifconfig
+   32  clear
+   33  ifconfig|more
+   34  clear
+   35  netstat -an|grep 8080
+   36  clear
+   37  cd ..
+   38  cat docker-compose.yml 
+   39  clear
+   40  vi docker-compose.yml 
+   41  lsof : 8080
+   42  yum install lsof
+   43  lsof : 8080
+   44  lsof -i : 8080
+   45  lsof -i :8080
+   46  clear
+   47  lsof -i :8080
+   48  ifconfig
+   49  clear
+   50  reboot
+   51  lea
+   52  clear
+   53  ifconfig
+   54  cd cd 
+   55  cd cd
+   56  cd /home/
+   57  mkdir repo
+   58  cd repo/
+   59  git
+   60  clear
+   61  yum install git 
+   62  clear
+   63  git 
+   64  clear
+   65  git clone https://github.com/olexandryermilov/taxiproject.git
+   66  clear
+   67  ls 
+   68  ls taxiproject/
+   69  clear
+   70  ls -l
+   71  clear
+   72  dir
+   73  cd taxiproject/
+   74  clear
+   75  ls
+   76   -l
+   77  clear
+   78  ls -l
+   79  clear
+   80  systemctl status jenkins
+   81  clear
+   82  sudo yum remove docker                   docker-common                   docker-selinux                   docker-engine-selinux                   docker-engine                   docker-ce
+   83  sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+   84  clear
+   85  sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+   86  sudo yum install docker-ce
+   87  clear
+   88  docker
+   89  clear
+   90  id
+   91  usermod -aG docker $user
+   92  lear
+   93  clear
+   94  echo $USER
+   95  usermod -aG docker $USER
+   96  clear
+   97  sudo systemctl start docker
+   98  sudo systemctl enable docker
+   99  clear
+  100   sudo docker run hello-world
+  101  clear
+  102  sudo yum install epel-release
+  103  sudo yum install -y python-pip
+  104  pip
+  105  clear
+  106  sudo pip install docker-compose
+  107  pip install --upgrade pip
+  108  clear
+  109  sudo yum upgrade python*
+  110  clear
+  111  pwd
+  112  cd ..
+  113  clear
+  114  ls 
+  115  cd ..
+  116  clear
+  117  ls 
+  118  mkdir dockercompose
+  119  cd dockercompose/
+  120  mkdir mkdir hello-world
+  121  clear
+  122  ls
+  123  rm -rf mkdir/
+  124  cd hello-world/
+  125  vi  docker-compose.yml
+  126  docker-compose up
+  127  clear
+  128  docker-compose up
+  129  docker-compose ps
+  130  docker-compose stop
+  131  docker-compose rm 
+  132  clear
+  133  cd ..
+  134  clear
+  135  mkdir nginx && cd $_
+  136  vi docker-compose.yml
+  137  docker-compose up -d
+  138  docker ps
+  139  docker exec -it c5619c1a9a55 /bin/bash
+  140  cd ..
+  141  clear
+  142  dir
+  143  cd ..
+  144  clear
+  145  mkdir sonarqube
+  146  cd sonarqube/
+  147  git clone https://github.com/temptemp3/sonarqube-docker-compose.git
+  148  clear
+  149  dir
+  150  cd sonarqube-docker-compose/
+  151  docker build --tag sonar_dc:latest --no-cache --force-rm .
+  152  clear
+  153  dir
+  154  docker-compose up
+  155  clear
+  156  clar
+  157  clear
+  158  echo $JAVA_HOME
+  159  clear
+  160  ls -l
+  161  java
+  162  clear
+  163  java -v
+  164  java -V
+  165  java -version
+  166  sudo yum install java-1.8.0-openjdk-devel
+  167  clear
+  168  javac
+  169  cle
+  170  sudo alternatives --config java
+  171  java
+  172  clear
+  173  ls /usr/java/jdk1.8.0_161/jre
+  174  sudo alternatives --config java
+  175  ls /usr/lib/jvm
+  176  cd  /usr/lib/jvm
+  177  clear
+  178  ls -l
+  179  cd java-1.8.0
+  180  dur
+  181  dir
+  182  clear
+  183  ls -l
+  184  cd bin/
+  185  clear
+  186  ls
+  187  cd ..
+  188  clear
+  189  ls -l
+  190  cd ..
+  191  clear
+  192  ls -l
+  193  export JAVA_HOME=/usr/java/jdk1.
+  194  pwd
+  195  export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+  196  cd /
+  197  cd root/
+  198  ls -la
+  199  vi .bash_profile 
+  200  export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
+  201  vi .bash_profile 
+  202  clear
+  203  ifconfig
+  204  systemctl status jenkins
+  205  clearclear
+  206  clear
+  207  netstat -an|grep 8080
+  208  vi /etc/sysconfig/network-scripts/
+  209  cd  /etc/sysconfig/network-scripts/
+  210  vi ifcfg-enp0s3 
+  211  ifdown enp0s3
+  212  clear
+  213  docker images
+  214  docker run -it nginx /bin/bash
+  215  ckear
+  216  clear
+  217  docker run -it -v /data nginx /bin/bash
+  218  clear
+  219  docker ps
+  220  docker exec f93e1c0dff3b ls /data
+  221  docker exec f93e1c0dff3b ls /
+  222  docker run -it -v /data nginx /bin/bash
+  223  clear
+  224  docker ps
+  225  docker exec f93e1c0dff3b ls /
+  226  docker exec f93e1c0dff3b /bin/ls 
+  227  clear
+  228  docker exec f93e1c0dff3b /bin/ls 
+  229  ls /
+  230  docker exec -it f93e1c0dff3b /bin/bash
+  231  clear
+  232  docker ps
+  233  docker stats f93e1c0dff3b
+  234  clear
+  235  docker 
+  236  docker kill $(docker ps -q)
+  237  docker rm $(docker ps -q)
+  238  clear
+  239  docker ps -a
+  240  systemctl stop docker
+  241  systemctl start docker
+  242  docker ps -a
+  243  clear
+  244  docker ps
+  245  docker ps -a
+  246  docker rm $(docker ps -q)
+  247  docker rm ${docker ps -q}
+  248  docker rm ${docker ps -a q}
+  249  docker rm ${docker ps -a }
+  250  docker 
+  251  ckear
+  252  clear
+  253  docker ps
+  254  docker ps -a
+  255  docker rm ${docker ps -aq }
+  256  docker rm ${docker ps -q }
+  257  docker rm $(docker ps -q )
+  258  docker ops -a
+  259  clear
+  260  docker ps -a
+  261  docker rm  
+  262  docker ps -a|awk '(print $1}'
+  263  docker ps -a|awk '{print $1}'
+  264  docker ps -a|awk '{print $1}'|xargs docker kill 
+  265  docker ps -a|awk '{print $1}'|xargs docker stop
+  266  docker ps -a|awk '{print $1}'|xargs docker kill 
+  267  clear
+  268  docker ps -a|awk '{print $1}'|xargs docker rm  
+  269  clear
+  270  docker ps -a
+  271  clear
+  272  dicker 
+  273  docker
+  274  clear
+  275  ls /var/lib/docker/
+  276  ls -ll /var/lib/docker/ 
+  277  ls -ll /var/lib/docker/image/
+  278  ls -ll /var/lib/docker/image/overlay2/
+  279  ls -ll /var/lib/docker/image/overlay2/imagedb/
+  280  ls -ll /var/lib/docker/image/overlay2/imagedb/content/
+  281  ls -ll /var/lib/docker/image/overlay2/imagedb/content/sha256/
+  282  docker images
+  283  docker rmi 194001bff7b7 c12289de6f88 sonarqube           latest              0ffa2f43b99b        2 weeks ago         929MB
+  284  clear
+  285  docker images
+  286  docker rmi 3f8a4339aadd f2a91732366c
+  287  clear
+  288  dir 
+  289  ls -l
+  290  pwd
+  291  cd /var/lib/docker/image/overlay2/
+  292  dir
+  293  cd imagedb/
+  294  dir
+  295  cd content/
+  296  dir
+  297  cd sha256/
+  298  clear
+  299  ls 
+  300  ls -l
+  301  clear
+  302  rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+  303  rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+  304  yum repolist
+  305  yum --enablerepo=elrepo-kernel install kernel-ml
+  306  clear
+  307  uname -r
+  308  sudo awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg
+  309  sudo grub2-set-default 0
+  310  uname -r
+  311  sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+  312  reboot
+  313  clear
+  314  ifconfig
+  315  docker
+  316  clear
+  317  uname -r
+  318  yum update
+  319  clear
+  320  cat /etc/redhat-release 
+  321  uname -r
+  322  yum --enablerepo=elrepo-kernel install kernal-ml
+  323  yum install elrepo-kernel
+  324  ifconfig
+  325  clear
+  326  ifconfig|grep enp
+  327  ifconfig|grep inet
+  328  cear
+  329  clear
+  330  hostname
+  331  hostnamectl set-hostname master
+  332  hostname
+  333  reboot
+  334  clear
+  335  hostname
+  336  yum update -y
+  337  clear
+  338  cat /etc/redhat-release 
+  339  clear
+  340  cat /etc/redhat-release 
+  341  clear
+  342  ifconfig
+  343  clear
+  344  yum remove docker-ce -y
+  345  clear
+  346  docker 
+  347  clear
+  348  yum remove docker* -y
+  349  yum remove docker -y
+  350  docker 
+  351  clear
+  352  yum remove docker*CLI* -y
+  353  clear
+  354  history |grep yum 
+  355  history|grep -i docker
+  356  clear
+  357  history|grep -i docker
+  358  history|grep -i install|grep -i docker
+  359  clear
+  360  history|grep -i install|grep -i docker
+  361  docker
+  362  clear
+  363  ifconfig
+  364  clear
+  365  sudo yum remove docker docker-common docker-selinux docker-engine
+  366  clear
+  367  docker
+  368  clear
+  369  docker -v
+  370  yum remove docker*
+  371  yum remove docker-ce
+  372  yum remove *docker*
+  373  docker
+  374  dicker images
+  375  docker images
+  376  clea
+  377  clear
+  378  sudo yum remove docker                   docker-client                   docker-client-latest                   docker-common                   docker-latest                   docker-latest-logrotate                   docker-logrotate                   docker-engine
+  379  sudo yum remove docker                   docker-client                   docker-client-latest                  
+  380  docker -v
+  381  sudo yum remove docker                   docker-ce-cli
+  382  clear
+  383  repo
+  384  clear
+  385  docker
+  386  ansible
+  387  clear
+  388  pip3
+  389  python3
+  390  sestatus
+  391  https://github.com/stardata/ansible-disable-selinux.git
+  392  pwd
+  393  cd /home/vagrant/
+  394  git clone  https://github.com/stardata/ansible-disable-selinux.git 
+  395  clear
+  396  dur
+  397  clear
+  398  dir
+  399  cd ansible-disable-selinux/
+  400  clear
+  401  ls -l
+  402  sudo yum remove docker                   docker-ce-cli
+  403  sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
+  404  sestaus
+  405  sestatus
+  406  sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config 
+  407  sestatus
+  408  clear
+  409  cat /etc/selinux/config 
+  410  sestatus
+  411  setenforce 0
+  412  sestatus
+  413  cd tasks/
+  414  ckear
+  415  clear
+  416  dir
+  417  cat main.yml 
+  418  sestatus
+  419  clear
+  420  dir
+  421  vi main.yml 
+  422  vi /etc/selinux/config 
+  423  setenforce 1
+  424  clear
+  425  sestatus
+  426  cd ..
+  427  clear
+  428  dir
+  429  pwd
+  430  ansible
+  431  sudo yum install epel-release
+  432  sudo yum install ansible
+  433  cler
+  434  clear
+  435  ansible
+  436  clear
+  437  dir
+  438  ls -l
+  439  vi disable-selinux.MD
+  440  clear
+  441  ls -l
+  442  cd ..
+  443  clear
+  444  ls -l
+  445  vi selinux.yaml
+  446  vi selinux.yaml 
+  447  ansible-playbook selinux.yaml 
+  448  clear
+  449  ansible-playbook selinux.yaml 
+  450  yum install  libselinux 
+  451  clear
+  452  ansible-playbook selinux.yaml 
+  453  sestatus
+  454  clear
+  455  ansible-playbook selinux.yaml 
+  456  yum install libselinux-python
+  457  yum install libsemanage-python
+  458  reboot
+  459  claer
+  460  clear
+  461  sestaus
+  462  sestatus
+  463  clear
+  464  sestatus
+  465  clear
+  466  cd /home/vagrant/
+  467  dir
+  468  clear
+  469  cear
+  470  clear
+  471  yum install libsemanage-python
+  472  vi ex.yaml
+  473  clear
+  474  dir 
+  475  cat selinux.yaml 
+  476  vi ex.yaml 
+  477  ansible-playbook ex.yaml 
+  478  vi ex.yaml 
+  479  ansible-playbook ex.yaml 
+  480  vi ex.yaml 
+  481  clear
+  482  cat selinux.yaml 
+  483  vi ex.yaml 
+  484  ansible-playbook ex.yaml 
+  485  vi ex.yaml 
+  486  cat selinux.yaml 
+  487  vi ex.yaml 
+  488  cat selinux.yaml 
+  489  clear
+  490  vi ex.yaml 
+  491  ansible-playbook ex.yaml 
+  492  vi ex.yaml 
+  493  cp selinux.yaml  ex2.yaml
+  494  cat ex.yaml 
+  495  vi ex2.yaml 
+  496  ansible-playbook ex2.yaml
+  497  clear
+  498  cp selinux.yaml ex2.yaml 
+  499  vi selinux.yaml 
+  500  rm ex.yaml 
+  501  vi ex2.yaml 
+  502  ansible-playbook --connection=local 127.0.0.1 ex2.yaml 
+  503  vi hosttest.yaml
+  504  mv hosttest.yaml playbook.yaml
+  505  ansible-playbook playbook.yml -i localhost, -k
+  506  clear
+  507  ls -l
+  508  ansible-playbook playbook.yaml -i localhost, -k
+  509  ansible-playbook playbook.yaml -i localhost
+  510  ansible-playbook playbook.yaml 
+  511  celar
+  512  ansible-playbook playbook.yaml --connection=local
+  513  ansible-playbook localhost playbook.yaml --connection=local
+  514  ansible-playbook  playbook.yaml -i localhost --connection=local
+  515  ansible-playbook  -i localhost playbook.yaml 
+  516  clear
+  517  ansible-playbook  -i localhost playbook.yaml 
+  518  ansible-playbook -c local -i 'localhost,' playbook.yaml 
+  519  vi ex2.yaml 
+  520  ansible-playbook  playbook.yaml 
+  521  ansible-playbook  ex2.yaml 
+  522  clear
+  523  ansible-playbook  ex2.yaml 
+  524  vi ex2.yaml 
+  525  cat selinux.yaml 
+  526  vi ex2.yaml 
+  527  clear
+  528  ansible-playbook  ex2.yaml 
+  529  ansible-playbook -c local -i 'localhost,' ex2.yaml 
+  530  clear
+  531  ansible-playbook -c local -i 'localhost,' ex2.yaml 
+  532  vi ex2.yaml 
+  533  ansible-playbook  ex2.yaml 
+  534  clear
+  535  vi inventory.conf
+  536  vi inventory.ini
+  537  vi ex2.yaml 
+  538  cp ex2.yaml ex3.yaml 
+  539  vi ex3.yaml 
+  540  vi inventory.ini 
+  541  ansible-playbook -i inventory.ini playbook.yaml 
+  542  vi ex3.yaml 
+  543  clear
+  544  history 
+  545  c;ear
+  546  clear
+  547  cd /home/vagrant/
+  548  vi ex2.yaml 
+  549  history 
+  550   ansible-playbook -c local -i 'localhost,' ex2.yaml 
+  551  vi ex2.yaml 
+  552   ansible-playbook -c local -i 'localhost,' ex2.yaml 
+  553  vi ex2.yaml 
+  554   ansible-playbook -c local -i 'localhost,' ex2.yaml 
+  555  clear
+  556  cat ex2.yaml 
+  557  vi ex2.yaml 
+  558  clear
+  559  cat ex2.yaml 
+  560  vi selinux.yaml 
+  561  vi inventory.ini 
+  562  ansible-playbook -i inventory.ini selinux.yaml 
+  563  ansible-playbook -i inventory.ini selinux.yaml -k
+  564  clear
+  565  cp /etc/fstab testfstab
+  566  cat testfstab 
+  567  sed -i '/![^#]/ s/\(^.*BBB.*$\)/#\ \1/' testfstab 
+  568  cat testfstab 
+  569  sed -i '/![^#]/ s/\(^.*swap.*$\)/#\ \1/' testfstab 
+  570  cat testfstab 
+  571  clear
+  572  cat testfstab 
+  573  sed -i '/![^#]/ s/\(^.*swap.*$\)/#\ \1/' testfstab 
+  574  cat testfstab 
+  575  sed -i 's/^[^#]*BBB/#&/' testfstab 
+  576  cat testfstab 
+  577  clear
+  578  vi testfstab 
+  579  sed -i 's/^[^#]*swap/#&/' testfstab 
+  580  cat testfstab 
+  581  sed -i 's/^[^#]*swap/#&/' testfstab 
+  582  cat testfstab 
+  583  sed -i 's/^[^#]*swap/#&/' testfstab 
+  584  cat testfstab 
+  585  clear
+  586  cat testfstab 
+  587  vi testfstab 
+  588  clear
+  589  sed -i 's/^[^#]*swap/#&/' testfstab 
+  590  cat testfstab 
+  591  vi p1.yaml
+  592  dir
+  593  clear
+  594  cp ex2.yaml ex5.yaml
+  595  vi ex5.yaml 
+  596  clear
+  597  history 
+  598  vi run.sh
+  599  vi ex5.yaml 
+  600  cp ex5.yaml temp
+  601  vi ex5.yaml 
+  602  chmod 755 run.sh 
+  603  ./run.sh 
+  604  vi testfstab 
+  605  vi ex5.yaml 
+  606  ./run.sh 
+  607  vi ex5.yaml 
+  608  ./run.sh 
+  609  vi ex5.
+  610  vi ex5.yaml 
+  611  vi testfstab 
+  612  ./run.sh 
+  613  vi testfstab 
+  614  vi ex5.yaml 
+  615  ./run.sh 
+  616  cat testfstab 
+  617  clear
+  618  cat testfstab 
+  619  cp /etc/fstab testfstab 
+  620  ./run.sh 
+  621  cat testfstab 
+  622  vi ex5.yaml 
+  623  ./run.sh 
+  624  vi testfstab 
+  625  cp /etc/fstab testfstab 
+  626  cls
+  627  vi ex5.yaml 
+  628  cat testfstab 
+  629  clear
+  630  cat testfstab 
+  631  ./run.sh 
+  632  cat testfstab 
+  633  clear
+  634  ./run.sh 
+  635  cat testfstab 
+  636  cp ex5.yaml ex10.yaml
+  637  vi ex10.yaml 
+  638  clear
+  639  sed -i.bak 's/^\(swap.*\)/#\1/g' testfstab 
+  640  vi testfstab
+  641  sed -i.bak 's/^\(swap.*\)/#\1/g' testfstab 
+  642  vi testfstab
+  643  sed -i.bak 's/^\(.*:wqswap.*\)/#\1/g' testfstab 
+  644  vi testfstab
+  645  sed -i.bak 's/^\(.*swap.*\)/#\1/g' testfstab 
+  646  vi testfstab
+  647  sed -i.bak 's/^\(.*swap.*\)/#\1/g' testfstab 
+  648  cat testfstab
+  649  :q
+  650  sed -i.bak '(^#)! s/^\(.*swap.*\)/#\1/g' testfstab 
+  651  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab 
+  652  vi testfstab
+  653  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab 
+  654  vi testfstab
+  655  clear
+  656  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab vi q
+  657  vi ex10.yaml 
+  658  vi testfstab
+  659  ./run.sh 
+  660  cat testfstab
+  661  clear
+  662  ./run.sh 
+  663  cat testfstab
+  664  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab 
+  665  cat testfstab
+  666  vi testfstab
+  667  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab 
+  668  cat testfstab
+  669  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab 
+  670  cat testfstab
+  671  clear
+  672  vi ex5.yaml 
+  673  vi run.sh 
+  674  ./run.sh 
+  675  cat testfstab
+  676  vi testfstab
+  677  ./run.sh 
+  678  cat testfstab
+  679  clear
+  680  vi testfstab
+  681  ./run.sh 
+  682  cat testfstab
+  683  :q
+  684  vi ex10.yaml 
+  685  clear
+  686  cat ex10.yaml 
+  687  cat testfstab
+  688  cat run.sh 
+  689  ./run.sh 
+  690  clear
+  691  vi ex10.yaml 
+  692  cat ex10.yaml 
+  693  cat testfstab
+  694  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testswap
+  695  lear
+  696  clear
+  697  dir 
+  698  cat testfstab
+  699  cat ex10.yaml 
+  700  clear
+  701  sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' testfstab
+  702  cat testfstab
+  703  vi ex10.yaml 
+  704  vi testfstab
+  705  ./run.sh 
+  706  cat testfstab
+  707  clear
+  708  ./run.sh 
+  709  cat testfstab
+  710  clear
+  711  cat ex10.yaml 
+  712  swapall
+  713  swap
+  714  swapon 
+  715  swapoff
+  716  swapoff -a
+  717  clear
+  718  swapon -s
+  719  swapon 
+  720  swapon -s
+  721  swapon 
+  722  swapon -s
+  723   swapon --all
+  724  swapon -s
+  725  vi ex10.yaml 
+  726  ./run.sh 
+  727  vi ex10.yaml 
+  728  ./run.sh 
+  729  :q
+  730  vi ex10.yaml 
+  731  clear
+  732  vi run.sh 
+  733  copy run.sh runback.sh 
+  734  copy run.sh run.sh.bak
+  735  cp run.sh run.sh.bak
+  736  vi run.sh
+  737  ./run.sh
+  738  vi ex10.yaml 
+  739  ./run.sh
+  740  vi ex10.yaml 
+  741  vi run.sh
+  742  ./run.sh
+  743  cear
+  744  clear
+  745  cat ex10.yaml 
+  746  clear
+  747  cat selinux.
+  748  cat selinux.yaml 
+  749  cat ansible-disable-selinux/tasks/main.yml 
+  750  clear
+  751  cd /root/.ssh/
+  752  dir
+  753  clear
+  754  ls -l
+  755  ssh-keygen
+  756  clear
+  757  ssh-copy-id 10.0.0.214
+  758  ssh 10.0.0.214
+  759  ssh-copy-id 10.0.0.220
+  760  ckear
+  761  clear
+  762  ifconfig
+  763  clear
+  764  ssh 10.0.0.220
+  765  clear
+  766  cd /home/vagrant/
+  767  clear
+  768  ls -l
+  769  pwd
+  770  clear
+  771  ls -l
+  772  git clone https://github.com/learnitguide/kubernetes-and-ansible.git
+  773  clear
+  774  ls -l
+  775  cd kubernetes-and-ansible/
+  776  clear
+  777  ls -l
+  778  cd centos/
+  779  clear
+  780  ls -,
+  781  clear
+  782  ls -l
+  783  vi hosts 
+  784  cler
+  785  clear
+  786  ls -l
+  787  vi clear_k8s_setup.yml 
+  788  cd playbooks/
+  789  dir
+  790  clear
+  791  ls -l
+  792  vi configure_master_node.yml 
+  793  clear
+  794  ls -l
+  795  vi env_variables 
+  796  vi configure_master_node.yml 
+  797  clear
+  798  ls -l
+  799  vi setting_up_nodes.yml 
+  800  cat /sys/class/dmi/id/product_uuid
+  801  ssh root@10.0.0.214 cat /sys/class/dmi/id/product_uuid
+  802  ssh root@10.0.0.220 cat /sys/class/dmi/id/product_uuid
+  803  yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+  804  clear
+  805  ls -l
+  806  vi configure_master_node.yml 
+  807  vi setting_up_nodes.yml 
+  808  cat env_variables 
+  809  clear
+  810  pwd
+  811  clear
+  812  pwd
+  813  dir
+  814  ls -l
+  815  vi env_variables 
+  816  yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+  817  systemctl enable --now kubelet
+  818  clear
+  819  cat <<EOF >  /etc/sysctl.d/k8s.conf
+  820  net.bridge.bridge-nf-call-ip6tables = 1
+  821  net.bridge.bridge-nf-call-iptables = 1
+  822  EOF
+  823  sysctl --system
+  824  lsmod | grep br_netfilter
+  825  modprobe br_netfilter.
+  826  systemctl stop firewalld
+  827  systemctl disable firewalld
+  828  systemctl mask --now firewalld
+  829  yum install iptables-services
+  830  lsmod br_netfilter
+  831  lsmod
+  832  lsmod |grep br
+  833  yum install bridge-utils -y
+  834  lsmod br_netfiler
+  835  lsmod 
+  836  lsmod |grep br
+  837  clear
+  838  echo br_netfilter > /etc/modules-load.d/br_netfilter.conf
+  839  vi /etc/modules-load.d/br_netfilter.conf 
+  840  ls  /etc/modules-load.d/
+  841  reboot
+  842  clear
+  843  ifconfig
+  844  clear
+  845  lear
+  846  clear
+  847  ls -l
+  848  history 
+  849  ifconfig
+  850  clear
+  851  ifconfig 
+  852  vi /etc/hosts
+  853  scp /etc/hosts root@10.0.0...219:/etc/hosts
+  854  scp /etc/hosts root@10.0.0.219:/etc/hosts
+  855  scp /etc/hosts root@10.0.0.214:/etc/hosts
+  856  clear
+  857  ping node1
+  858  clear
+  859  vi /etc/hosts
+  860  clear
+  861  history 
+  862  scp /etc/hosts root@10.0.0.219:/etc/hosts
+  863  scp /etc/hosts root@10.0.0.214:/etc/hosts
+  864  scp /etc/hosts root@10.0.0.220:/etc/hosts
+  865  clear
+  866  cd /home/vagrant/
+  867  vi inventory.ini 
+  868  clear
+  869  cler
+  870  clear
+  871  dir
+  872  ls -l
+  873  cd kubernetes-and-ansible/
+  874  clear
+  875  ls 
+  876  cd centos/
+  877  cear
+  878  clear
+  879  ls -l
+  880  vi env_variables 
+  881  lsmod
+  882  modprobe br_netfilter
+  883  clear
+  884  lsmod | grep br_netfilter
+  885  sudo yum install docker-ce docker-ce-cli containerd.io
+  886  clear
+  887  systemctl start docker
+  888  systemctl start dockerd
+  889  systemctl start docker
+  890  clear
+  891  dcker ps
+  892  docker ps
+  893  docker ps -a
+  894  clear
+  895  ssh 10.0.0.214
+  896  ssh 10.0.0.220
+  897  ssh 10.0.0.214
+  898  ssh 10.0.0.220
+  899  clear
+  900  modprobe br_netfilter.
+  901  cat /var/lib/kubelet/kubeadm-flags.env
+  902  cat /etc/default/kubelet
+  903  yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
+  904  systemctl enable --now kubele
+  905  systemctl enable --now kubelet
+  906  systemctl daemon-reload
+  907  systemctl restart kubelet
+  908  systemctl status kubelet
+  909  clear
+  910  cd /home/vagrant/
+  911  cd ansible-disable-selinux/
+  912  clear
+  913  cd ..
+  914  clear
+  915  ls -l
+  916  cd kubernetes-and-ansible/
+  917  clear
+  918  dir
+  919  cd centos/
+  920  dir
+  921  clear
+  922  ls -l
+  923  vi env_variables 
+  924  clear
+  925  ksnid|grep br_netfilter
+  926  lsmod|grep br_netfilter
+  927  modbrobe br_netfilter
+  928  modprobe br_netfilter
+  929  lsmod|grep br_netfilter
+  930  modprobe br_netfilter
+  931  reboot
+  932  clear
+  933  docker
+  934  clear
+  935  docker ps
+  936  docker ps -a
+  937  clear
+  938  kubectl get pod
+  939  kubectl get nodes
+  940  ifconfig|grep inet
+  941  history 
+  942  cls
+  943  clear
+  944  pwd
+  945  history >history12

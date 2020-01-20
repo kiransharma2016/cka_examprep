@@ -1,0 +1,2 @@
+## initial bootstrap a server
+https://www.digitalocean.com/community/tutorials/how-to-use-ansible-to-automate-initial-server-setup-on-ubuntu-18-04

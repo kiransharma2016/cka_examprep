@@ -1,0 +1,114 @@
+---
+- name: Test
+  hosts: all 
+  gather_facts: false
+  become: true
+  tasks:
+  - import_role:
+      name: ansible-disable-selinux
+
+==================================== 
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      replace:
+        dest: /home/vagrant/testfstab
+        regexp: '(.*swap.*)'
+        replace: '#\1'
+ 
+    - name: Disable swap
+      command: swapoff -a
+      when: ansible_swaptotal_mb > 0
+---
+- hosts: localhost
+
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      lineinfile:
+        dest: /etc/fstab
+        regexp: '^//swap'
+        line: '#//swap'
+        state: present
+      tags: update-fstab
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      replace:
+        dest: /home/vagrant/testfstab
+        regexp: '(.*swap.*)'
+        replace: '#\1'
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      lineinfile:
+        dest: /etc/fstab
+        regexp: '^//archive/pipeline'
+        line: '#//archive/pipeline'
+        state: present
+      tags: update-fstab
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+  - import_role:
+      name: disabling-selinux 
+---
+- name: Test
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      command: sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' /etc/fstab 
+
+      args:
+        warn: false # set warn=false to prevent warning
+      register: services_list
+ 
+    - name: Disable swap
+      command: swapoff -a
+      when: ansible_swaptotal_mb > 0
+selinux
+---
+# tasks for ansible-disable-selinux
+- name: Install libselinux as prerequisite for SELinux Ansible module
+  yum:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - libselinux-python
+    - libsemanage-python
+
+- name: Disable SELinux at next reboot
+  selinux:
+    state: disabled
+
+- name: Set SELinux in permissive mode until the machine is rebooted
+  command: setenforce 0
+  ignore_errors: true
+  changed_when: false
+
+---
+- hosts: all
+  tasks:
+    - debug: msg=test
+  - name: Setup kubeconfig for vagrant user
+    command: "{{ item }}"
+    with_items:
+     - mkdir -p /home/vagrant/.kube
+     - cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
+     - chown vagrant:vagrant /home/vagrant/.kube/config

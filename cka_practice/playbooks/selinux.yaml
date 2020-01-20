@@ -1,0 +1,25 @@
+---
+
+- name: disable selinux 
+  hosts:  all
+  gather_facts: false
+  become: true
+
+# tasks for ansible-disable-selinux
+
+- name: Install prerequisite libraries for SELinux 
+  yum:
+    name: "{{item}}"
+    state: latest
+  with_items:
+    - libselinux-python
+    - libsemanage-python
+
+- name: Disable SELinux at next reboot
+  selinux:
+    state: disabled
+
+- name: Set SELinux in permissive  until the server is rebooted
+  command: setenforce 0
+  ignore_errors: true
+  changed_when: false

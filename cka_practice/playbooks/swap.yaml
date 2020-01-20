@@ -1,0 +1,16 @@
+---
+- name: Test
+  hosts: localhost 
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      command: sed -i '/^#/! s/^\(.*swap.*\)/#\1/g' /home/vagrant/testfstab 
+
+      args:
+        warn: false # set warn=false to prevent warning
+      register: services_list
+
+    - name: swap - disable swap
+      command: swapoff --all
+      ignore_errors: yes 

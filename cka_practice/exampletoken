@@ -1,0 +1,2 @@
+kubeadm join 10.0.0.10:6443 --token ncpxkd.gohgn702rpstsgwc \
+    --discovery-token-ca-cert-hash sha256:8c2af6b1a2210c52b88463d0476486176c953943026e273f79f5b784cceafd8f

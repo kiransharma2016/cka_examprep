@@ -1,0 +1,21 @@
+LAST SEEN   TYPE     REASON                    OBJECT                               MESSAGE
+60m         Normal   NodeHasSufficientMemory   node/ip-172-31-36-219.ec2.internal   Node ip-172-31-36-219.ec2.internal status is now: NodeHasSufficientMemory
+60m         Normal   NodeHasNoDiskPressure     node/ip-172-31-36-219.ec2.internal   Node ip-172-31-36-219.ec2.internal status is now: NodeHasNoDiskPressure
+60m         Normal   NodeHasSufficientPID      node/ip-172-31-36-219.ec2.internal   Node ip-172-31-36-219.ec2.internal status is now: NodeHasSufficientPID
+60m         Normal   RegisteredNode            node/ip-172-31-36-219.ec2.internal   Node ip-172-31-36-219.ec2.internal event: Registered Node ip-172-31-36-219.ec2.internal in Controller
+60m         Normal   Starting                  node/ip-172-31-36-219.ec2.internal   Starting kube-proxy.
+59m         Normal   Starting                  node/ip-172-31-44-102.ec2.internal   Starting kubelet.
+59m         Normal   NodeHasSufficientMemory   node/ip-172-31-44-102.ec2.internal   Node ip-172-31-44-102.ec2.internal status is now: NodeHasSufficientMemory
+59m         Normal   NodeHasNoDiskPressure     node/ip-172-31-44-102.ec2.internal   Node ip-172-31-44-102.ec2.internal status is now: NodeHasNoDiskPressure
+59m         Normal   NodeHasSufficientPID      node/ip-172-31-44-102.ec2.internal   Node ip-172-31-44-102.ec2.internal status is now: NodeHasSufficientPID
+59m         Normal   NodeAllocatableEnforced   node/ip-172-31-44-102.ec2.internal   Updated Node Allocatable limit across pods
+59m         Normal   RegisteredNode            node/ip-172-31-44-102.ec2.internal   Node ip-172-31-44-102.ec2.internal event: Registered Node ip-172-31-44-102.ec2.internal in Controller
+59m         Normal   Starting                  node/ip-172-31-44-102.ec2.internal   Starting kube-proxy.
+59m         Normal   NodeReady                 node/ip-172-31-44-102.ec2.internal   Node ip-172-31-44-102.ec2.internal status is now: NodeReady
+16m         Normal   Scheduled                 pod/my-nginx-f97c96f6d-srszj         Successfully assigned default/my-nginx-f97c96f6d-srszj to ip-172-31-44-102.ec2.internal
+16m         Normal   Pulling                   pod/my-nginx-f97c96f6d-srszj         Pulling image "nginx"
+16m         Normal   Pulled                    pod/my-nginx-f97c96f6d-srszj         Successfully pulled image "nginx"
+16m         Normal   Created                   pod/my-nginx-f97c96f6d-srszj         Created container nginx
+16m         Normal   Started                   pod/my-nginx-f97c96f6d-srszj         Started container nginx
+16m         Normal   SuccessfulCreate          replicaset/my-nginx-f97c96f6d        Created pod: my-nginx-f97c96f6d-srszj
+16m         Normal   ScalingReplicaSet         deployment/my-nginx                  Scaled up replica set my-nginx-f97c96f6d to 1

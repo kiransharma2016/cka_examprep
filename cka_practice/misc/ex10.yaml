@@ -1,0 +1,16 @@
+---
+- name: Test
+  hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Comment out pipeline archive in fstab
+      command: sed -i.bak '/^#/! s/^\(.*swap.*\)/#\1/g' /etc/fstab 
+
+      args:
+        warn: false # set warn=false to prevent warning
+      register: services_list
+ 
+    - name: Disable swap
+      command: swapoff -a
+      when: ansible_swaptotal_mb > 0

@@ -1,0 +1,16 @@
+
+---
+- hosts: localhost
+  become: no
+  gather_facts: yes
+  vars:
+    date: "{{ lookup('pipe', 'date +%Y%m%d') }}"
+  tasks:
+   - name: Display the available timestamp format in Ansible
+     shell: cp /etc/nsswitch.conf  /etc/nsswitch.conf.{{ date }}
+
+   - name: Display the newly created file
+     shell: ls -lrt /etc/nsswitch.conf.{{ date }}
+     register: LISTFILE
+
+   - debug: msg={{ LISTFILE.stdout }}

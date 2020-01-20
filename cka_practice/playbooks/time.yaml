@@ -1,0 +1,9 @@
+---
+- name: Test
+  hosts: localhost
+  gather_facts: false
+  tasks:
+  - name: Set timezone to 'Central Standard Time' (GMT-06:00)
+    timezone:
+      name: America/New_York 
+
