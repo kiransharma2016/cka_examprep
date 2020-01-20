@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: edurekaproject
+spec:
+  rules:
+  - host: edurekak8project-1193436378.us-east-1.elb.amazonaws.com
+    http:
+      paths:
+      - path: /users
+        backend:
+          serviceName: userapp
+          servicePort: 80
+      - path: /admin
+        backend:
+          serviceName: adminapp
+          servicePort: 80    
+      - path: /
+        backend:
+          serviceName: userapp
+          servicePort: 80

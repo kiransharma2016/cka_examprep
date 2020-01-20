@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userapp
+  labels:
+    app: users
+    tier: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: users
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: users
+        tier: frontend
+    spec:
+      containers:
+      - name: users
+        image: hshar/users
+        ports:
+        - containerPort: 8081
+        volumeMounts:
+          - name: secret-vol
+            mountPath: "/var/secrets/"
+            readOnly: true
+      volumes:
+        - name: secret-vol
+          secret:
+           secretName: db-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: userapp
+spec:
+  selector:
+    app: users
+    tier: frontend
+  ports:
+   - port: 80
+  type: NodePort

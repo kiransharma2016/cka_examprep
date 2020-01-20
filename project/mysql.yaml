@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sqldb
+  labels:
+    app: mysql
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: mysql
+        tier: backend
+    spec:
+      containers:
+      - name: mysql
+        image: hshar/mysql:5.5
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: mysqldata
+          mountPath: /data/mysqldata
+      volumes:
+      - name: mysqldata
+        persistentVolumeClaim:
+         claimName: mysqldata-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  selector:
+      app: mysql
+      tier: backend
+  ports:
+  - port: 3306
+  clusterIP: None
+  

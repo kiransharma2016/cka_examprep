@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adminapp
+  labels:
+    app: admin
+    tier: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: admin
+        tier: frontend
+    spec:
+      containers:
+      - name: admin
+        image: hshar/admin
+        ports:
+        - containerPort: 8081
+        volumeMounts:
+            - name: secret-vol
+              mountPath: "/var/secrets/"
+              readOnly: true
+      volumes:
+        - name: secret-vol
+          secret:
+           secretName: db-secret
+   ---
+     
+apiVersion: v1
+kind: Service
+metadata:
+  name: adminapp
+spec:
+  selector:
+    app: admin
+    tier: frontend
+  ports:
+   - port: 80
+  type: NodePort
+  
