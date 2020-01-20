@@ -1,4 +1,4 @@
-#### basick Linux skills for continer engineer
+#### Basic Linux skills for continer engineer
 
 1. command line 
   File and directories
