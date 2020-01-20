@@ -1,3 +1,16 @@
+#### basick Linux skills for continer engineer
+
+1. command line 
+  File and directories
+  users, sudo, and security 
+  editing files
+  basic bash funcitons 
+    setting environment variables
+    loops
+    conditions
+    
+#--------- Resources
+
 #### History of containers
 https://dzone.com/articles/evolution-of-linux-containers-future
 
