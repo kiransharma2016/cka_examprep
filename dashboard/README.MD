@@ -21,7 +21,7 @@
 ####  type http://ip of your node :node port displayed in the display service above
       ex: http://10.0.0.114:30419/
 
-#### 100.0.114 is ip of my master and 30419 is the service port
+#### 10.0.0.114 is ip of my master and 30419 is the service port
 
 ####    skip the login to get in  the dashboard     
 
@@ -60,9 +60,9 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjJBNzB4bFZDbFN1cVRkd3N4VkxSVTdmVS1ROGlyR2l5WVl4ZHZ0
 ####  Type http://ip of your node :node port displayed in the display service above
 ####  eg: http://10.0.0.114:30419/
 
-#### 100.0.114 is ip of my master and 30419 is the service port
+#### 10.0.0.114 is ip of my master and 30419 is the service port
 
-####    ener the token generated above 
+####  Ener the token generated above 
 
 
 ####Deleting kubernetes dashboard objects in default project
