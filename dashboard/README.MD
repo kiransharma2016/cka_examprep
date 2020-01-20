@@ -1,4 +1,6 @@
-# deploy insecure dashboard
+# Deploying k8s Dashboard
+
+## 1 Deploy insecure dashboard
    kubectl apply -f dashboard-insecure.yml
 ### validate
 ```
@@ -25,7 +27,7 @@
 
 
 
-#### Deploying the secuire dashboard
+## 2. Deploying the secuire dashboard
 
 #### 1. Deploy the dashboad   
 kubectl apply -f dashboard-secure.yml
