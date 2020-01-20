@@ -1,0 +1,5 @@
+kubectl --namespace=kubenetes-dashboard delete deployment,service,role,rolebinding,sa,secret -l k8s-app=kubernetes-dashboard
+
+kubectl delete -f <file from which the dashboard was created
+
+
