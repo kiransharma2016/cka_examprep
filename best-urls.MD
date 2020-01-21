@@ -1,12 +1,12 @@
 #### Basic Linux skills for continer engineer
 
 1. command line 
-  File and directories
-  users, sudo, and security 
-  editing files
-  basic bash funcitons 
-    setting environment variables
-    loops
+  File and directories \
+  users, sudo, and security  \
+  editing files \
+  basic bash funcitons  \
+    setting environment variables \
+    loops \
     conditions
     
 #--------- Resources
