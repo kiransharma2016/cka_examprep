@@ -43,3 +43,5 @@ https://www.exoscale.com/syslog/container-orchestration/
 https://www.magalix.com/blog/kubernetes-secrets-101
 
 
+#------------------------openshift
+https://github.com/RedHatWorkshops/openshiftv3-workshop/blob/master/10-SCM-Web-Hooks.adoc
