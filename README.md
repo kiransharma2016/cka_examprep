@@ -18,6 +18,7 @@
  ---
 
 
+Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
 ## Resources
 #### cka_examprep
