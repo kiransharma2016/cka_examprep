@@ -1,4 +1,4 @@
-#This repo will have materials for cka test and for practiioner as well. 
+#This repo will have materials for cka test but it will be useful for practiioners as well. 
 
 #### setting up kubernetes cluster
 
