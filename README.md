@@ -1,15 +1,19 @@
 #This repo will have materials for cka test but it will be useful for practiioners as well. 
 
 #### setting up kubernetes cluster
+1. introduction to containers
+2. introduction to Docker 
+3. Introduction to kubernetes
+4. setting up kubernetes cluster
 
-1. preparing machines
-2. instaling prerequisite
-3. instaling docker 
-4. installing kubernetes 
-5. initialiasing cluster
-6. add nodes
-7. deploy cni 
-8. validate the cluster is funcitioninig
+  ''' 1. preparing machines
+  2. instaling prerequisite
+  3. instaling docker 
+  4. installing kubernetes 
+  5. initialiasing cluster
+  6. add nodes
+  7. deploy cni 
+  8. validate the cluster is funcitioninig '''
 
 
 
