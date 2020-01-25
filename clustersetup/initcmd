@@ -1,0 +1,63 @@
+# setting up kubernetes cluster 
+
+1. Docker Related commands 
+    docker --version
+    docker images 
+    docker search supermaio
+    docker search supermario
+    docker search httpd
+    docker pull httpd
+    docker run -it httpd bash
+    docker run -d -p 18080:80 httpd
+    docker ps 
+    docker exec -it  970f bash
+    docker ps 
+    docker stop  
+    docker pull pengbai/docker-supermario
+    docker images
+    docker run --name=mygame1 -d -p 18080:8080 pengbai/docker-supermario
+   
+ 2. kubeadm --version
+   id
+   cat /etc/os-release
+  
+   ssh kslave1
+   ssh @kslave2
+   free -m
+   lscpu 
+   docker --version
+    
+ 3. Checking the system 
+   
+   systemctl status kubelet
+   systemctl restart kubelet
+   systemctl status kubelet
+   kubectl get nodes
+   kubeadm reset
+   rm  $HOME/.kube/config
+   rm /var/lib/etcd
+   rm /var/lib/etcd -rvf
+   kubeadm init --apiserver-advertise-address $(hostname -i)
+   kubectl get nodes
+   mkdir -p $HOME/.kube
+   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+   sudo chown $(id -u):$(id -g) $HOME/.kube/config
+   kubectl get nodes
+   
+4. Initialising the cluser
+
+   kubectl apply -n kube-system -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 |tr -d '\n')"
+   kubectl get pods --all-namespaces -w
+   
+   kubeadm token create --print-join-command
+
+5. checking the master has come up 
+   kubectl get nodes --all-namespaces
+   checking what pods have come up 
+
+
+6. checking the objects and api server supported
+
+   kubectl api-version
+   kubectl api-resources
+
