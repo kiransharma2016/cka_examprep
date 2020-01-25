@@ -1,7 +1,19 @@
-#This repo will have materials for cka test
+#This repo will have materials for cka test and for practiioner as well. 
+
+#### setting up kubernetes cluster
+
+1. preparing machines
+2. instaling prerequisite
+3. instaling docker 
+4. installing kubernetes 
+5. initialiasing cluster
+6. add nodes
+7. deploy cni 
+8. validate the cluster is funcitioninig
 
 
 
+## Resources
 #### cka_examprep
 #### playbook to isnstall kuberenetes
 https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d 
