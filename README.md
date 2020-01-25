@@ -16,6 +16,12 @@
      7. deploy cni 
      8. validate the cluster is funcitioninig 
  ---
+5. Deploy Application 
+6. creating k8s objects eg daemonset, pod, etc
+7. Applying ssl 
+8. Managing Logs
+9. Monitoring 
+10. Cluster Maintenance
 
 
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
