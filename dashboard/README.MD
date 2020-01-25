@@ -64,21 +64,23 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IjJBNzB4bFZDbFN1cVRkd3N4VkxSVTdmVS1ROGlyR2l5WVl4ZHZ0
 
 ####  Ener the token generated above 
 
+#### Deleting the dashboard objects created above 
 
 ####Deleting kubernetes dashboard objects in default project
-kubectl delete deployment kubernetes-dashboard --namespace=kube-system
-kubectl delete service kubernetes-dashboard --namespace=kube-system
-kubectl delete role kubernetes-dashboard-minimal --namespace=kube-system
-kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kube-system
-kubectl delete sa kubernetes-dashboard --namespace=kube-system
-kubectl delete secret kubernetes-dashboard-certs --namespace=kube-system
-kubectl delete secret kubernetes-dashboard-key-holder --namespace=kube-system
+
+kubectl delete deployment kubernetes-dashboard --namespace=kube-system \
+kubectl delete service kubernetes-dashboard --namespace=kube-system \
+kubectl delete role kubernetes-dashboard-minimal --namespace=kube-system \
+kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kube-system \
+kubectl delete sa kubernetes-dashboard --namespace=kube-system \
+kubectl delete secret kubernetes-dashboard-certs --namespace=kube-system \
+kubectl delete secret kubernetes-dashboard-key-holder --namespace=kube-system \
 
 #### Deleting object for namespaces kubernetes-dashboard
-kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
-kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard
-kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard
-kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard
+kubectl delete deployment kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete role kubernetes-dashboard-minimal --namespace=kubernetes-dashboard \
+kubectl delete rolebinding kubernetes-dashboard-minimal --namespace=kubernetes-dashboard \
+kubectl delete sa kubernetes-dashboard --namespace=kubernetes-dashboard \
+kubectl delete secret kubernetes-dashboard-certs --namespace=kubernetes-dashboard \
 kubectl delete secret kubernetes-dashboard-key-holder --namespace=kubernetes-dashboard
