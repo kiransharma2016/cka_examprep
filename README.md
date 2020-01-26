@@ -1,9 +1,9 @@
 #This repo will have materials for cka test but it will be useful for practiioners as well. 
 
-#### This tutorials will start with short history of containers,  and docker, docker compose and kubernetes.  Then we will work on docker little bit as much it needed for kubernetes, look at an example of docker-compose, then jump into kubernetes. 
+#### This tutorials will start with short history of containers, docker, docker compose and kubernetes. Then we will work on docker little bit as much it needed for kubernetes, look at an example of docker-compose, then jump into kubernetes. 
 
 
-History of containers
+History of and volution of containers
 https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016
 
 
