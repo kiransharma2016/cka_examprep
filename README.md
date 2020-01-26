@@ -34,6 +34,13 @@ https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-dock
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
 ## Resources
+
+#### 1. History and evolution Resources
+#### coreOS rkt history and development 
+https://coreos.com/blog/rkt-hits-1-0.html
+
+2. Resources for cka and improving professional experiences
+
 #### cka_examprep
 #### playbook to isnstall kuberenetes
 https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d 
