@@ -39,16 +39,9 @@ Note: I will be using docker as container runtime. Now we can use other containt
 #### coreOS rkt history and development 
 https://coreos.com/blog/rkt-hits-1-0.html
 
-2. Resources for cka and improving professional experiences
+#### 2. Resources for cka and improving professional experiences
 
-#### cka_examprep
-#### playbook to isnstall kuberenetes
-https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d 
-#### playbook to configure kubernetes cluster
-https://github.com/ctienshi/kubernetes-ansible.git
 
-tcp dump
-https://www.linuxtechi.com/capture-analyze-packets-tcpdump-command-linux/
 
 
 #### ------- greping log based on timestamp
@@ -70,3 +63,13 @@ https://8gwifi.org/docs/prometheus-dashboard.jsp
 
 good blog for cicd
 https://devops4solutions.com/category/ci-cd-workflows-demo/
+
+
+#### 3. Utilities 
+#### playbook to isnstall kuberenetes
+https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d 
+#### playbook to configure kubernetes cluster
+https://github.com/ctienshi/kubernetes-ansible.git
+
+tcp dump
+https://www.linuxtechi.com/capture-analyze-packets-tcpdump-command-linux/
