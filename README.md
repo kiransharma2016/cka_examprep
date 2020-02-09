@@ -36,7 +36,20 @@ https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-dock
 
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
-## ome useful kubectl commands 
+#### Detailed explanation of above topics
+
+I will be adding stuff continously and sometime they wil not be in sequence
+
+#### Deployment. 
+The applicaiton depllyment is the main use of kubernetes cluster. There are many kubernetes objects which make a kubernetes application. I will start from POD.
+
+#### 1. POD
+1.1 Normal pod
+1.2 Daemon
+1.3 Static 
+
+
+## Some useful kubectl commands 
 ===========================================================================================================
 
 
