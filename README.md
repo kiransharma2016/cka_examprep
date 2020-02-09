@@ -1,13 +1,16 @@
 #This repo will have materials for cka test but it will be useful for practiioners as well. 
 
-#### This tutorials will start with short history of containers, docker, docker compose and kubernetes. Then we will work on docker little bit as much it needed for kubernetes, look at an example of docker-compose, then jump into kubernetes. 
+#### 1. Introduction 
+This tutorials will start with short history of containers, docker, and kubernetes. Then we will work on docker as it needed for kubernetes, then jump into kubernetes. As an example of progressing from single container ( docker) to multi container app, we will also look at docker-compose very briefly. 
 
-
-History of and volution of containers
+#### 2. History of and volution of containers
 https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016
 
 
-#### setting up kubernetes cluster
+#### 3. Docker example 
+
+
+#### 4. setting up kubernetes cluster
 1. introduction to containers
 2. introduction to Docker 
 3. Introduction to kubernetes
@@ -33,6 +36,44 @@ https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-dock
 
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
+
+#### some commands===========================================================================================================
+# some useful kubectl commands 
+
+#Node related commands
+kubectl get nodes                       	----	lists all the nodes in the cluster
+
+Result
+NAME      STATUS   ROLES    AGE   VERSION
+kmaster   Ready    master   28d   v1.17.0
+node1     Ready    <none>   28d   v1.16.3
+node2     Ready    <none>   28d   v1.16.3
+
+
+#Namespace commands 
+kubectl get namespaces
+
+NAME                   STATUS   AGE
+default                Active   28d
+kube-node-lease        Active   28d
+kube-public            Active   28d
+kube-system            Active   28d
+kubernetes-dashboard   Active   21d
+myday2                 Active   13d
+
+	
+
+#Pod related commands
+kubectl get nodes --all-namespaces 		----	lists pods in all namespaces
+kubectl get pods --all-namespaces -o wide	----	list alls the pods in the cluster in detail
+kubectl describe pod nginx-example		----	all detail about the pod nginx-example
+# Deleting the pod nginx-example 
+kubectl delete pod nginx			----	deletes the pod nginx-example
+
+
+
+
+
 ## Resources
 
 #### 1. History and evolution Resources
@@ -40,9 +81,6 @@ Note: I will be using docker as container runtime. Now we can use other containt
 https://coreos.com/blog/rkt-hits-1-0.html
 
 #### 2. Resources for cka and improving professional experiences
-
-
-
 
 #### ------- greping log based on timestamp
 grep -E '2019-11-14T09:1[4-6]' /var/log/syslog
