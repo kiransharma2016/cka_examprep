@@ -52,7 +52,7 @@ The applicaiton depllyment is the main use of kubernetes cluster. There are many
 ## Some useful kubectl commands 
 
 ---
-===========================================================================================================
+==============================================================================
 ---
 
 #### Node related commands 
