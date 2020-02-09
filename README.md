@@ -91,6 +91,19 @@ kubectl describe pod nginx-example		----	all detail about the pod nginx-example
 kubectl delete pod nginx-example 			----	deletes the pod nginx-example
 
 
+#### Resource limit and max in kubernetes
+
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: memory-cpu-limit-demo
+spec:
+  hard:
+    requests.cpu: ".5"
+    requests.memory: 2Gi
+    limits.cpu: "4"
+    limits.memory: 8Gi
+    
 
 
 
