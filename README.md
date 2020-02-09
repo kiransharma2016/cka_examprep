@@ -51,8 +51,10 @@ node1     Ready    <none>   28d   v1.16.3 \
 node2     Ready    <none>   28d   v1.16.3
 ---
 
-#Namespace commands 
+####Namespace commands 
+
 kubectl get namespaces
+
 ---
 NAME                   STATUS   AGE
 default                Active   28d
@@ -66,12 +68,12 @@ myday2                 Active   13d
 
 ####Pod related commands
 
-#.1 Creating a pod from a manifest file \
+1. Creating a pod from a manifest file \
 kubectl create -f ngix-example-deployment.yaml \
 we will get a output like this if successful \
 deployment.apps/nginx-deployment created
 
-#### now check the pod 
+2. Now check the pod 
 kubectl get pod
 ---
 NAME                                READY   STATUS              RESTARTS   AGE
