@@ -52,7 +52,7 @@ node2     Ready    <none>   28d   v1.16.3
 
 #Namespace commands 
 kubectl get namespaces
-
+---
 NAME                   STATUS   AGE
 default                Active   28d
 kube-node-lease        Active   28d
@@ -60,18 +60,19 @@ kube-public            Active   28d
 kube-system            Active   28d
 kubernetes-dashboard   Active   21d
 myday2                 Active   13d
-
+---
 	
 
 ####Pod related commands
 
 #.1 Creating a pod from a manifest file \
-kubectl create -f ngix-example-deployment.yaml
+kubectl create -f ngix-example-deployment.yaml \
 we will get a output like this if successful \
 deployment.apps/nginx-deployment created
 
 #### now check the pod 
 kubectl get pod
+---
 NAME                                READY   STATUS              RESTARTS   AGE
 mydb-59cdfd5c8f-tzjxj               1/1     Running             2          12d
 nginx-deployment-54f57cf6bf-7fnjf   0/1     ContainerCreating   0          10s
@@ -79,7 +80,7 @@ nginx-deployment-54f57cf6bf-f6dqn   0/1     ContainerCreating   0          10s
 nginx-deployment-54f57cf6bf-sjkp6   0/1     ContainerCreating   0          10s
 
 Note: mydb-59cdfd5c8f-tzjxj already exist before we created the nginx pod
-
+---
 kubectl get nodes --all-namespaces 		----	lists pods in all namespaces
 kubectl get pods --all-namespaces -o wide	----	list alls the pods in the cluster in detail
 kubectl describe pod nginx-example		----	all detail about the pod nginx-example
