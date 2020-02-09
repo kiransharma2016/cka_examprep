@@ -44,9 +44,9 @@ Note: I will be using docker as container runtime. Now we can use other containt
 kubectl get nodes                       	----	lists all the nodes in the cluster
 
 Result
-NAME      STATUS   ROLES    AGE   VERSION
-kmaster   Ready    master   28d   v1.17.0
-node1     Ready    <none>   28d   v1.16.3
+NAME      STATUS   ROLES    AGE   VERSION \
+kmaster   Ready    master   28d   v1.17.0 \
+node1     Ready    <none>   28d   v1.16.3 \
 node2     Ready    <none>   28d   v1.16.3
 
 
