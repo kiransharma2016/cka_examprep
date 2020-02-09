@@ -37,11 +37,12 @@ https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-dock
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
 
-#### commands===========================================================================================================
-# some useful kubectl commands 
+## commands===========================================================================================================
+####  some useful kubectl commands 
 
-#Node related commands
+#Node related commands \
 kubectl get nodes                       	----	lists all the nodes in the cluster
+
 ---
 Result
 NAME      STATUS   ROLES    AGE   VERSION \
