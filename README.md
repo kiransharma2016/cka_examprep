@@ -45,6 +45,7 @@ kubectl get nodes                       	----	lists all the nodes in the cluster
 
 
 Result
+
 NAME      STATUS   ROLES    AGE   VERSION \
 kmaster   Ready    master   28d   v1.17.0 \
 node1     Ready    <none>   28d   v1.16.3 \
@@ -52,7 +53,6 @@ node2     Ready    <none>   28d   v1.16.3
 	
 
 ####Namespace commands 
-
 kubectl get namespaces
 
 ---
