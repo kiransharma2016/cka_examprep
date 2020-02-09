@@ -52,12 +52,11 @@ node1     Ready    <none>   28d   v1.16.3 \
 node2     Ready    <none>   28d   v1.16.3
 	
 
-####Namespace commands 
+#### Namespace commands 
 kubectl get namespaces
 
----
-NAME                   STATUS   AGE
-default                Active   28d
+NAME                   STATUS   AGE \
+default                Active   28d \
 kube-node-lease        Active   28d
 kube-public            Active   28d
 kube-system            Active   28d
