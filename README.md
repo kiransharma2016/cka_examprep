@@ -37,7 +37,7 @@ https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-dock
 Note: I will be using docker as container runtime. Now we can use other containter runtime as well but I am going with docker. 
 
 
-#### some commands===========================================================================================================
+#### commands===========================================================================================================
 # some useful kubectl commands 
 
 #Node related commands
@@ -63,12 +63,30 @@ myday2                 Active   13d
 
 	
 
-#Pod related commands
+####Pod related commands
+
+#.1 Creating a pod from a manifest file \
+kubectl create -f ngix-example-deployment.yaml
+we will get a output like this if successful \
+deployment.apps/nginx-deployment created
+
+#### now check the pod 
+kubectl get pod
+NAME                                READY   STATUS              RESTARTS   AGE
+mydb-59cdfd5c8f-tzjxj               1/1     Running             2          12d
+nginx-deployment-54f57cf6bf-7fnjf   0/1     ContainerCreating   0          10s
+nginx-deployment-54f57cf6bf-f6dqn   0/1     ContainerCreating   0          10s
+nginx-deployment-54f57cf6bf-sjkp6   0/1     ContainerCreating   0          10s
+
+Note: mydb-59cdfd5c8f-tzjxj already exist before we created the nginx pod
+
 kubectl get nodes --all-namespaces 		----	lists pods in all namespaces
 kubectl get pods --all-namespaces -o wide	----	list alls the pods in the cluster in detail
 kubectl describe pod nginx-example		----	all detail about the pod nginx-example
+# Label a pod
+ kubectl label pods labelex owner=michael
 # Deleting the pod nginx-example 
-kubectl delete pod nginx			----	deletes the pod nginx-example
+kubectl delete pod nginx-example 			----	deletes the pod nginx-example
 
 
 
