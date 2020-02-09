@@ -49,9 +49,9 @@ The applicaiton depllyment is the main use of kubernetes cluster. There are many
 1.3 Static 
 
 
-#### Some useful kubectl commands 
+## Some useful kubectl commands 
 
-##### ========================================================================================================================================
+#### ========================================================================================================================================
 
 
 #### Node related commands 
