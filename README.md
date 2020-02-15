@@ -44,10 +44,34 @@ I will be adding stuff continously and sometime they wil not be in sequence
 The applicaiton depllyment is the main use of kubernetes cluster. There are many kubernetes objects which make a kubernetes application. I will start from POD.
 
 #### 1. POD
-1.1 Normal pod
-1.2 Daemon
+wrapper of contianer. A pod can have more then one container in it. 
+
+Type of pods
+
+1.1 Normal pod \
+1.2 Daemon \
 1.3 Static 
 
+Now, lets see how we can create a pod. But before we create a pod, we need to decide where we would like to create our pod. Where I  mean which namespace. Lets create a namesapces before we create out first pod. 
+
+The following command create a namespace called 'example', 
+
+kubectl create namespace example
+check it is created by kubectl get namespaces command
+kubectl get namespaces
+
+NAME                   STATUS   AGE
+default                Active   35d
+'example                Active   18s'
+kube-node-lease        Active   35d
+kube-public            Active   35d
+kube-system            Active   35d
+kubernetes-dashboard   Active   28d
+myday2                 Active   20d
+
+We can see the example namespace is created. Now, let's go ahead and create a pod. 
+
+kubectl run web --image=appache2 --restart=Never -n example
 
 ## Some useful kubectl commands 
 
