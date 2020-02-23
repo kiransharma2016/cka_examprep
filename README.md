@@ -75,8 +75,7 @@ kubectl run web --image=appache2 --restart=Never -n example
 
 ## Some useful kubectl commands 
 
-#### ====================================================================================================================================
-
+---
 
 #### Node related commands 
 kubectl get nodes                       	----	lists all the nodes in the cluster
