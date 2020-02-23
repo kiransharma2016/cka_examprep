@@ -147,11 +147,11 @@ spec:
 
 ## Resources
 
-#### 1. History and evolution Resources
+## 1. History and evolution Resources
 #### coreOS rkt history and development 
 https://coreos.com/blog/rkt-hits-1-0.html
 
-#### 2. Resources for cka and improving professional experiences
+## 2. Resources for cka and improving professional experiences
 
 #### ------- greping log based on timestamp
 grep -E '2019-11-14T09:1[4-6]' /var/log/syslog
@@ -174,11 +174,11 @@ good blog for cicd
 https://devops4solutions.com/category/ci-cd-workflows-demo/
 
 
-#### 3. Utilities 
+## 3. Utilities 
 #### playbook to isnstall kuberenetes
 https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d 
 #### playbook to configure kubernetes cluster
 https://github.com/ctienshi/kubernetes-ansible.git
 
-tcp dump
+#### tcp dump
 https://www.linuxtechi.com/capture-analyze-packets-tcpdump-command-linux/
