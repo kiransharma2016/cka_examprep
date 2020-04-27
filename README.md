@@ -46,20 +46,20 @@ The applicaiton depllyment is the main use of kubernetes cluster. There are many
 #### 1. POD
 Unit of deployment in kubeernetes. it is a wrapper of contianer. A pod can have more then one container in it. 
 
-Workloads
-Pods
-Deployments
-StatefulSets
-DaemonSets
-Jobs
-CronJobs
+'Workloads
+'Pods
+'Deployments
+'StatefulSets
+'DaemonSets
+'Jobs
+'CronJobs
 
 Now, lets see how we can create a pod. But before we create a pod, we need to decide where we would like to create our pod. Where I  mean which namespace. Lets create a namesapces before we create out first pod. 
 
 The following command create a namespace called 'example', 
 
-kubectl create namespace example
-check it is created by kubectl get namespaces command
+kubectl create namespace example \
+check it is created by kubectl get namespaces command \
 kubectl get namespaces
 
 NAME                   STATUS   AGE
@@ -74,6 +74,15 @@ myday2                 Active   20d
 We can see the example namespace is created. Now, let's go ahead and create a pod. 
 
 kubectl run web --image=appache2 --restart=Never -n example
+
+
+Services
+service exposes the pod to outside world. 
+Service Types
+ClusterIP
+NodePort
+LoadBalancer
+
 
 ## Some useful kubectl commands 
 
