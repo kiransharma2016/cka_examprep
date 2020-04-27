@@ -44,13 +44,15 @@ I will be adding stuff continously and sometime they wil not be in sequence
 The applicaiton depllyment is the main use of kubernetes cluster. There are many kubernetes objects which make a kubernetes application. I will start from POD.
 
 #### 1. POD
-wrapper of contianer. A pod can have more then one container in it. 
+Unit of deployment in kubeernetes. it is a wrapper of contianer. A pod can have more then one container in it. 
 
-Type of pods
-
-1.1 Normal pod \
-1.2 Daemon \
-1.3 Static 
+Workloads
+Pods
+Deployments
+StatefulSets
+DaemonSets
+Jobs
+CronJobs
 
 Now, lets see how we can create a pod. But before we create a pod, we need to decide where we would like to create our pod. Where I  mean which namespace. Lets create a namesapces before we create out first pod. 
 
