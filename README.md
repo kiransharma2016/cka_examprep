@@ -1,7 +1,7 @@
 #This repo will have materials for cka test but it will be useful for practiioners as well. 
 
 #### 1. Introduction 
-This tutorials will start with short history of containers, docker, and kubernetes. Then we will work on docker as it needed for kubernetes, then jump into kubernetes. As an example of progressing from single container ( docker) to multi container app, we will also look at docker-compose very briefly. 
+This tutorials will start with short history of containers, docker, and kubernetes. Then we will work on docker as it is needed for kubernetes, then jump into kubernetes. As an example of progressing from single container ( docker) to multi container app, we will also look at docker-compose very briefly. 
 
 #### 2. History of and volution of containers
 https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016
@@ -191,4 +191,9 @@ https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-
 https://github.com/ctienshi/kubernetes-ansible.git
 
 #### tcp dump
-https://www.linuxtechi.com/capture-analyze-packets-tcpdump-command-linux/
+https://www.linuxtechi.com/capture-analyze-packets-tcpdump-command-linux/ yum list docker-ce --showduplicates | sort -r
+
+
+
+Container deep dive blog 
+https://mkdev.me/en/posts/dockerless-part-1-which-tools-to-replace-docker-with-and-why
